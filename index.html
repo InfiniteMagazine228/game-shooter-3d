@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D FPS Game</title>
+    <title>3D FPS Game với Gemini AI</title>
     <link rel="stylesheet" href="style.css">
-    <!-- 1. Nhúng thư viện Three.js lên trên đầu đầu tiên -->
     <script src="https://cloudflare.com"></script>
 </head>
 <body>
     <div id="crosshair"></div>
     <div id="ui">MÁU: <span id="hp">100</span> | ĐIỂM: <span id="score">0</span></div>
+    
+    <!-- Khung hiển thị lời thoại của Bot AI -->
+    <div id="bot-dialog">Bot: Đang đợi lệnh...</div>
+
     <div id="instructions">
         <h2>BẤM VÀO ĐÂY ĐỂ CHƠI</h2>
         <p>Di chuyển: W, A, S, D<br>Quay góc nhìn: Chuột<br>Bắn: Click Chuột Trái</p>
     </div>
     <canvas id="gameCanvas"></canvas>
-
-    <!-- 2. Thêm thuộc tính defer để ép file game.js chờ thư viện Three.js tải xong hoàn toàn -->
     <script defer src="game.js"></script>
 </body>
 </html>
