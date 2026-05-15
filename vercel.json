@@ -1,23 +1,4 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "server.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/style.css",
-      "dest": "/style.css"
-    },
-    {
-      "src": "/game.js",
-      "dest": "/game.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "server.js"
-    }
-  ]
+  "cleanUrls": true
 }
