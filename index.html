@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D FPS Game - Full Architecture</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Nhúng Three.js Core -->
+    <script src="https://cloudflare.com"></script>
+    <!-- Nhúng GLTFLoader để load mô hình 3D quái vật/robot -->
+    <script src="https://jsdelivr.net"></script>
+</head>
+<body>
+
+    <div id="crosshair"></div>
+    <div id="ui">MÁU: <span id="hp">100</span> | ĐIỂM: <span id="score">0</span></div>
+    
+    <div id="instructions">
+        <h2>BẤM VÀO ĐÂY ĐỂ CHƠI</h2>
+        <p>Di chuyển: W, A, S, D<br>Quay góc nhìn: Chuột<br>Bắn: Click Chuột Trái</p>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Nhúng file logic game chính -->
+    <script src="game.js"></script>
+</body>
+</html>
