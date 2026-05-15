@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D FPS Game</title>
     <link rel="stylesheet" href="style.css">
+    <!-- 1. Nhúng thư viện Three.js lên trên đầu đầu tiên -->
     <script src="https://cloudflare.com"></script>
 </head>
 <body>
@@ -15,6 +16,8 @@
         <p>Di chuyển: W, A, S, D<br>Quay góc nhìn: Chuột<br>Bắn: Click Chuột Trái</p>
     </div>
     <canvas id="gameCanvas"></canvas>
-    <script src="game.js"></script>
+
+    <!-- 2. Thêm thuộc tính defer để ép file game.js chờ thư viện Three.js tải xong hoàn toàn -->
+    <script defer src="game.js"></script>
 </body>
 </html>
